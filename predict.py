@@ -24,7 +24,7 @@ EtiqHom=np.arange(2,102,2)
 EtiqHom=np.append(EtiqHom,[59,67])
 Label=np.zeros(100)
 Label[EtiqHom-1]=1
-x_train,x_test,y_train,y_test= train_test_split(Data, Label, train_size=0.5)
+x_train,x_test,y_train,y_test= train_test_split(Data, Label, train_size=0.7)
 scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
