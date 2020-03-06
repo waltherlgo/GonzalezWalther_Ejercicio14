@@ -53,7 +53,7 @@ Data_val = scaler.transform(Data_val)
 ypred=clf.predict(Data_val)
 count=0
 out=open("test/predict_test.csv","w")
-out.write("Names,Target\n")
+out.write("Name,Target\n")
 for names in files_val:
     print(names.split("/")[-1],ypred[count])
     out.write("{},{}\n".format(names.split("/")[-1],ypred[count]))
